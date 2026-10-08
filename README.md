@@ -39,6 +39,7 @@ docker compose up --build -d
 ```
 
 - Oberfläche: http://localhost:8080
+- Swagger_ http://localhost:8080/api/docs 
 - API: http://localhost:8080/api/facilities
 
 Nginx liefert das Frontend aus und leitet `/api/` an das Backend weiter. Der Backend-Port ist in der vorgeschlagenen Compose-Konfiguration nicht am Host veröffentlicht.

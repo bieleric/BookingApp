@@ -12,6 +12,8 @@ services:
     build: ./backend
     volumes:
       - booking-data:/data
+    environment:
+      ROOT_PATH: /api
     healthcheck:
       test:
         - CMD

@@ -48,7 +48,7 @@ async def lifespan(app):
     init_db()
     yield
 
-app = FastAPI(title='Sportstätten-Buchung', lifespan=lifespan)
+app = FastAPI(title='Sportstätten-Buchung', lifespan=lifespan, root_path=os.getenv("ROOT_PATH", ""))
 app.add_middleware(
     CORSMiddleware,
     allow_origins=['http://localhost:5173', 'http://127.0.0.1:5173'],
