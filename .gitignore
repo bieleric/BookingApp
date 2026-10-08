@@ -1,0 +1,48 @@
+# Frontend: Abhängigkeiten und Build
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
+/frontend/coverage/
+
+# Backend: virtuelle Umgebungen
+/backend/.venv/
+/backend/venv/
+/backend/env/
+
+# Python: Cache und Build
+__pycache__/
+*.py[cod]
+*.egg-info/
+/backend/build/
+/backend/dist/
+
+# Tests und Analyse
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# SQLite-Datenbanken einschließlich Journaldateien
+/backend/*.db
+/backend/*.db-*
+/backend/*.sqlite
+/backend/*.sqlite-*
+/backend/*.sqlite3
+/backend/*.sqlite3-*
+
+# Lokale Konfiguration und Zugangsdaten
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs
+*.log
+
+# Editor und Betriebssystem
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
